@@ -1,3 +1,27 @@
 fruits = ['Banana', 'Apple', 'Lime']
 loud_fruits = [fruit.upper() for fruit in fruits]
 print(loud_fruits) # Output: ['BANANA', 'APPLE', 'LIME']
+
+import { useState } from 'react'; // Import the useState Hook
+
+function CounterButton() {
+  // Declare a state variable 'count' and a function 'setCount' to update it
+  const [count, setCount] = useState(0); 
+
+  // Define a function to handle the button click event
+  function handleClick() {
+    setCount(count + 1);
+  }
+
+  // Return the JSX to render the UI
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={handleClick}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
+export default CounterButton;
