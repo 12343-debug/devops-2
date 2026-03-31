@@ -13,15 +13,4 @@ function CounterButton() {
     setCount(count + 1);
   }
 
-  // Return the JSX to render the UI
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={handleClick}>
-        Click me
-      </button>
-    </div>
-  );
-}
 
-exporedrdrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrt default CounterButton;
